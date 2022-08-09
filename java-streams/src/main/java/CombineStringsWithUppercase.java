@@ -11,5 +11,7 @@ public class CombineStringsWithUppercase {
         List<String> G7 = Arrays.asList("USA", "Japan", "France", "Germany", "Italy", "U.K.","Canada");
         String combined = G7.stream().map(String::toUpperCase).collect(Collectors.joining());
         System.out.println(combined);
+        String combined1 = G7.stream().map(String::toUpperCase).collect(Collectors.joining(",","[","]"));
+        System.out.println(combined1);
     }
 }
